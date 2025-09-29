@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terminal Simulation</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="container inside">
+        <div class="header">
+            <header>
+                <div class="terminal">
+                    
+                    <div class="head-terminal">
+                        <img src="icons/terminal.png" alt="Terminal" width="25px" class="terminal-icon">
+                        C:WINDOWS\system32\cmd.exe
+                    </div>
+                    
+                    <div class="icons">
+                        <img src="icons/min.png" alt="Minimize" width="25px">
+                        <img src="icons/max.png" alt="Maximize" width="25px">
+                        <img src="icons/close.png" alt="Close" width="25px">
+                    </div>
+                
+                </div>
+            </header>
+        </div>
+
+
+        <br />
+        <p class="texts" id="main-heading">
+            Microsoft Windows [Version 10.0.22631.3958] <br />(c) Microsoft Corporation. All rights reserved.
+        </p>
+
+
+        <p class="texts" id="info">
+            <span> C:\Users\shivi agarwal> </span>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, debitis id atque placeat doloremque exercitationem maiores solutaquis. Nam, iure!</span>
+        </p>
+
+
+        <p class="texts" id="startNode">
+            <span> C:\Users\shivi agarwal> </span>
+            <span><!-- To get started; type help and press Enter!! --></span>
+            <span id="cursor">.</span>
+        </p>
+
+
+        <p class="texts" id="inputPara" style="display: none;">
+            <span> C:\Users\shivi agarwal> </span>
+            <span><input type="text" name="codeInputField" id="codeInputField" placeholder="Type Command Here!!"></span>
+        </p>
+        
+        <p class="texts" id="resultPara" style="display: none;">
+            <span> C:\Users\shivi agarwal> </span>
+        </p>
+        
+        
+        <p class="texts" id="executeCommandPara" style="display: none;">
+            <span> C:\Users\shivi agarwal> </span>
+            <span> <input type="text" name="codeInputFieldResult" id="codeInputFieldResult" placeholder="Type Command Here!!"> </span>
+        </p>
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
