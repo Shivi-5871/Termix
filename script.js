@@ -95,7 +95,7 @@ function displayResult(command) {
             break;
         case "resume":
             text = "Opening resume...";
-            url = "https://drive.google.com/file/d/1G_e5ywikiwfpW2lysHpx8XbOG_UUhg5Y/view?usp=drive_link";
+            url = "https://drive.google.com/file/d/16HQEkC-FTjkhO0J2ZfARry_P3vxsIPhf/view?usp=sharing";
             break;
         case "portfolio":
             text = "Opening Portfolio.....";
