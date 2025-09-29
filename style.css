@@ -1,0 +1,133 @@
+/* Reset margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Full viewport height and width for the main container */
+body {
+    border: 1px solid white;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+/* START NODE */
+#startNode{
+    display: inline-block;
+}
+
+
+
+#cursor{
+    color: white;
+    background: white;
+    /* transition: opacity 0.3s; */
+}
+
+/* for text to be printed in new line */
+#resultPara{
+    white-space: pre-line;   
+}
+
+
+/* Terminal container layout */
+.terminal {
+    background-color: rgb(40, 39, 39);
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px;
+}
+
+
+
+/* Head-terminal text and icon alignment */
+.head-terminal {
+    display: flex;
+    align-items: center;
+}
+
+
+
+/* Icons container */
+.icons {
+    display: flex;
+    gap: 10px; 
+ } 
+
+
+
+
+/* Container styling */
+.container {
+    border: 1px solid rgb(43, 42, 42);
+    width: 70vw;
+    height: 70vh;
+    margin: 100px auto 0;
+    background-color: rgb(20, 19, 19);
+    color: white;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 0 0 30px black;
+}
+
+
+
+
+/* Text styling */
+.texts {
+    padding: 20px;
+}
+
+#codeInputField{
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    width: auto;
+}
+
+
+#codeInputFieldResult{
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    font-size: inherit;
+    font-family: inherit;
+    width: auto;
+}
+
+
+
+
+/* Animation for container */
+.inside {
+    animation: inside 1000ms cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+
+
+/* Keyframes for container animation */
+@keyframes inside {
+    from {
+        opacity: 0;
+        transform: scale(0.90) translateY(5rem);
+        background-color: rgb(54, 53, 53);
+        width: 50%;
+        height: 50%;
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: rgb(54, 53, 53);
+        width: 70%;
+        height: 70%;
+    }
+}
