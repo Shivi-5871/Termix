@@ -131,3 +131,53 @@ body {
         height: 70%;
     }
 }
+
+/* Tablet screens (768px and below) */
+@media (max-width: 768px) {
+    .container {
+        width: 90vw;
+        height: 75vh;
+    }
+
+    .texts {
+        font-size: 18px;   /* slightly smaller text */
+        padding: 15px;
+    }
+
+    .head-terminal {
+        font-size: 0.9rem; /* shrink cmd path text a bit */
+    }
+
+    .icons img {
+        width: 20px;  /* reduce control buttons */
+    }
+}
+
+/* Mobile screens (480px and below) */
+@media (max-width: 480px) {
+    .container {
+        width: 95vw;
+        height: 80vh;
+        margin: 20px auto;
+        font-size: 16px;
+    }
+
+    .texts {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .head-terminal {
+        font-size: 0.8rem;
+    }
+
+    .icons img {
+        width: 16px;
+    }
+
+    #codeInputField,
+    #codeInputFieldResult {
+        width: 100%;   /* make inputs stretch to fit mobile */
+        font-size: inherit;
+    }
+}
